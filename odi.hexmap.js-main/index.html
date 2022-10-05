@@ -91,87 +91,6 @@
 
 
 
-# EXAMPLE CODE DELETE WHEN COMPLETE
-
-
-	<section class="example" id="ex1">
-				<div class="example-code">
-					<style>
-					#hexmap1 { height: 2000px; width: 100%; animation-duration: 0.3s; }
-					#hexmap1 .hex-cell { stroke: white; stroke-width: 2; transition: fill 0.3s ease-in, stroke 0.3s ease-in, stroke-width 0.3s ease-in; }
-					/* Make the hexagon larger when hovered */
-					#hexmap1 .hex-cell.hover { stroke-width: 4px; transform: scale(2.5); }
-					/* Set the on and off styles for the text labels */
-					#hexmap1 .hex-label tspan.on { display: none; }
-					#hexmap1 .hex-label tspan.off { display: block; }
-					#hexmap1 .hex-label tspan.big { font-weight: bold; font-size: 1.2em; }
-					#hexmap1 .hex-label.hover tspan.on { display: block; }
-					#hexmap1 .hex-label.hover tspan.off { display: none; }
-					</style>
-					<figure>
-						<div id="hexmap1"></div>
-						<figcaption>EXAMPLE.</figcaption>
-					</figure>
-					<script>
-					ODI.ready(function(){
-						hex = new ODI.hexmap(document.getElementById('hexmap1'),{
-							'label':{
-								'show': true,	// Show a label
-								'clip': true,	// Make sure the label is clipped to the hexagon
-								// Define a function to format the hex labels
-								// It is passed:
-								//  * txt - a text string with the hex's name
-								//  * attr - an object containing:
-								//			.* size - the size in pixels
-								//			.* font-size - the font size in pixels
-								//			.* x - the horizontal position in pixels
-								//			.* y - the vertical position in pixels
-								//			.* hex - the hexagon's HexJSON properties
-								'format': function(txt,attr){
-									tspans = '<tspan class="off">'+txt.substr(0,3)+'</tspan>';
-									lines = txt.split(/ /);
-									lines.push(attr.hex.pop.toLocaleString());
-									for(var i = 0; i < lines.length; i++){
-										tspans += '<tspan class="on'+(i==lines.length-1 ? ' big':'')+'" y="'+(attr.y + (i-lines.length/2+0.5)*attr['font-size'])+'" x="'+attr.x+'">'+lines[i]+'</tspan>';
-									}
-									return tspans;
-								}
-							},
-							// The HexJSON layout
-							'hexjson':
-{
-	"layout":"odd-r",
-	"hexes": {
-		"E14000530":{"n":"Aldershot","q":-3,"r":-11,"pop":"3.472","colour":"rgb(251,0,3"},
-		"E14000531":{"n":"Aldridge-Brownhills","q":-3,"r":-1,"pop":"3.082","colour":"rgb(201,0,53"},
-		"E14000532":{"n":"Altrincham and Sale West","q":-7,"r":3,"pop":"2.685","colour":"rgb(151,0,103"},
-		"E14000533":{"n":"Amber Valley","q":0,"r":2,"pop":"3.181","colour":"rgb(214,0,40"},
-		"E14000534":{"n":"Arundel and South Downs","q":0,"r":-15,"pop":"3.257","colour":"rgb(223,0,31"},
-		"E14000535":{"n":"Ashfield","q":1,"r":2,"pop":"3.147","colour":"rgb(210,0,44"},
-		"E14000536":{"n":"Ashford","q":12,"r":-13,"pop":"3.306","colour":"rgb(230,0,24"},
-		"E14000537":{"n":"Ashton-under-Lyne","q":-5,"r":6,"pop":"2.732","colour":"rgb(157,0,97"},
-		"E14000538":{"n":"Aylesbury","q":2,"r":-6,"pop":"3.306","colour":"rgb(230,0,24"},
-		"E14000539":{"n":"Banbury","q":1,"r":-5,"pop":"3.375","colour":"rgb(239,0,15"},
-		"E14000540":{"n":"Barking","q":8,"r":-9,"pop":"2.903","colour":"rgb(178,0,76"}
-
-	}
-}
-
-
-
-
-
-
-
-
-});
-					});
-					</script>
-				</div>
-			</section>
-
-
-
 
 
 
@@ -7184,6 +7103,13 @@
 		"W07000080":{"n":"Cardiff South and Penarth","q":-10,"r":-9,"pop":"0.383","colour":"rgb(135,135,255)"},
 	}
 }
+								});
+					});
+					</script>
+				</div>
+			</section>
+
+
 
 
 
