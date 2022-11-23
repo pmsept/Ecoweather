@@ -7,17 +7,17 @@
       'title': 'Observed rainfall anomaly in 2019',
       'units': 'mm/day',
     },
-    'ann_rain_change_mmday_2065': {
+    'winter_rain_2030s': {
       'centred': true,
       'colourscale': 'BrBG',
       'dp': 3,
-      'title': 'Annual mean change in rainfall',
+      'title': 'Change in winter rainfall (2030s)',
       'units': 'mm/day',
     },
-    'ann_warming_oC_2065': {
+    'tas_2060s': {
       'colourscale': 'YlOrRd',
       'dp': 3,
-      'title': 'Annual mean change in temperature',
+      'title': 'Annual mean change in temperature (2060s)',
       'units': '°C',
     },
     'drought_day_change_2065': {
@@ -122,8 +122,8 @@
     const active_key = e.data.hexmap.extra.activeKey;
     const region_name = e.data.data.n;
     let region_contact = '';
-    if ('mp_name' in e.data.data) {
-      region_contact =  'MP: ' + e.data.data.mp_name;
+    if ('mp_firstname' in e.data.data) {
+      region_contact =  'MP: ' + e.data.data.mp_firstname +' '+ e.data.data.mp_surname;
       if ('first_party' in e.data.data) {
         region_contact += ' (' + e.data.data.first_party + ')';
       }
