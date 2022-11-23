@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Climate change by constituency over Great Britain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@cmbrierley">
+  <meta name="twitter:url" property="og:url" content="">
+  <meta name="twitter:title" property="og:title" content="Climate change by constituency over Great Britain">
+  <meta name="twitter:description" property="og:description" content="The 2017 UK parliamentary constituencies as a point-topped hex map.">
+  <meta name="twitter:image" property="og:image" content="">
+  <link rel="stylesheet" href="https://oacd-ucl.github.io/assets/main.css" type="text/css">
+  <link rel="stylesheet" href="./resources/app.css?v=1" type="text/css">
+</head>
+<body>
+  <header class="hexmap-header">
+    <h1>Climate change projections by constituency over Great Britain</h1>
+    <h4>These projections are taken from the Met Office's <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp">UKCP18 dataset</a>. They represent the change in the climate for the years 2051-2080 (so roughly 2065) compared to 1981-2010. These change are the average of an 'ensemble' of climate models with different physics that are then downscaled to an spatial grid of 12km. The projections use a scenarios of global carbon emissions called RCP8.5, which thankfully we are currently not following. The changes that are currently available to look at are:
+    <ul>
+      <li> annual mean change in rainfall (in mm/day) </li>
+      <li> annual temperature change in oC </li>
+      <li> difference in the number of days experiencing drought per year </li>
+      <li> change in amount of rain falling over the wettest 5 days of the year (in mm, related to flooding)</li>
+      <li> change in the number of days categorised as a heatwave by the regional publich health authorities </li>
+      <li> How much hotter the warmest day of the average year will be in future (in oC) </li>
+    </ul>
+    Additionally you can see the observed rainfall anomaly in 2019 (in mm/day). This analysis of projections was undertaken by Georgia Willits as part of her dissertation research for her Climate Change MSc at UCL Geography. The hexmap code was written by <a href="https://open-innovations.org/projects/hexmaps/">Open Innovations</a> and deployed for this webpage by Hannah Woodward. Prof. Chris Brierley supervised the research.
+    <h4>
+  </header>
+
+  <figure class="hexmap">
+    <select class="hexmap__select hexmap__section"></select>
+    <div class="hexmap__outer hexmap__section"></div>
+    <div class="hexmap__colourbar">
+      <div class="hexmap__colourbar__inner"></div>
+      <div class="hexmap__colourbar__labels">
+        <span class="hexmap__colourbar__min"></span>
+        <span class="hexmap__colourbar__label"></span>
+        <span class="hexmap__colourbar__max"></span>
+      </div>
+    </div>
+  </figure>
+
+  <script type="text/javascript" src="./resources/odi.hexmap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js" integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="./resources/app.js"></script>
+</body>
+</html>

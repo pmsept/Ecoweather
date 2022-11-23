@@ -1,0 +1,144 @@
+.hexmap-header {
+  background: #1d1d1d;
+  color: #fff;
+  padding: 1.5em;
+}
+.hexmap-header h1 {
+  margin-bottom: 0;
+}
+
+.hexmap-inner {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.hexmap {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 60em;
+  padding: 0 1.5em;
+  width: 100%;
+}
+
+.hexmap__colourbar {
+  margin-bottom: 1em;
+  margin-top: 3em;
+  padding: 0 1em;
+}
+.hexmap__colourbar__inner {
+  display: flex;
+  height: 2em;
+}
+.hexmap__colourbar__inner span {
+  flex: 1;
+}
+.hexmap__colourbar__label {
+  padding: 0 0.5em;
+  text-align: center;
+}
+.hexmap__colourbar__labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25em;
+}
+.hexmap__colourbar__max {
+  transform: translate(25%);
+}
+.hexmap__colourbar__min {
+  transform: translate(-25%);
+}
+
+.hexmap__outer {
+  animation-duration: 0.3s;
+  display: flex;
+  height: 0;
+  justify-content: center;
+  padding-bottom: 90%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.hexmap__outer svg {
+  height: 100%;
+  width: 100%;
+}
+.hexmap__outer .hex-cell {
+  stroke: black;
+  stroke-width: 0;
+  transition: fill 0.2s ease-in, stroke 0.2s ease-in, stroke-width 0.2s ease-in;
+}
+.hexmap__outer .hex-cell.hover {
+  stroke-width: 2px;
+}
+.hexmap__outer .tooltip {
+  position: absolute;
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 0.25em 0.5em;
+  transform: translate3d(-50%,50%,0);
+  transition: left 0.1s linear, top 0.1s linear;
+  border-radius: 4px;
+}
+.hexmap__outer .tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: auto;
+  width: 0;
+  height: 0;
+  border: 0.5em solid transparent;
+  left: 50%;
+  top: 0%;
+  transform: translate3d(-50%, -100%, 0);
+  border-color: transparent;
+  border-bottom-color: black;
+}
+
+.hexmap__section {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+.hexmap__select {
+  background-color: #fff;
+  border: 2px solid;
+  border-radius: 0.25em;
+  font-family: inherit;
+  padding: 0.5em;
+  width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  /* Don't bother with labels if it is too small */
+  .hexmap__outer .hex-label {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 32rem) {
+  .hexmap-header {
+    padding: 2em;
+  }
+
+  .hexmap {
+    padding: 0 2em;
+  }
+
+  .hexmap__colourbar__max {
+    transform: translate(50%);
+  }
+  .hexmap__colourbar__min {
+    transform: translate(-50%);
+  }
+
+  .hexmap__outer .hex-cell.hover {
+    stroke-width: 4px;
+  }
+
+  .hexmap__select {
+    font-size: 1.25em;
+    padding: 0.75em;
+  }
+}
