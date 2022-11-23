@@ -1,0 +1,13 @@
+name: uk-climate-by-mp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - xesmf
+  - regionmask
+  - geopandas
+  - cartopy
+  - shapely
+  - nb_conda_kernels
+  - geopy
+  - netcdf4

@@ -60,20 +60,6 @@ def get_crs(fnm):
         return crs[run_name(re.sub(".+_", "", fnm))]
     
 
-# Dictionary of indices of cells closest to Jersey (needed for aggregating over shapefiles, which otherwise excises the Channel Islands)
-channel_islands = {}
-for fnm in sorted(glob.glob("/data/met/ukcordex/CNRM-*/*/r1i1p1/fx/regridding-template_natgb*")):
-    ds = xr.open_dataset(fnm)
-    if "x" in ds.coords:
-        px = xr.ones_like(ds.mask).where((ds.lon > -13.05) & (ds.lon < -12.95) & (ds.lat > 0.2) & (ds.lat < 0.3), 0).argmax(dim = ["x", "y"])
-        channel_islands[ds.model_id] = [int(px["x"].values), int(px["y"].values)]
-    else:
-        px = xr.ones_like(ds.mask).where((ds.lon > -13.05) & (ds.lon < -12.95) & (ds.lat > 0.2) & (ds.lat < 0.3), 0).argmax(dim = ["lon", "lat"])
-        channel_islands[ds.model_id] = [int(px["lon"].values), int(px["lat"].values)]
-channel_islands["ukcp18"] = [48,11]
-del fnm, ds, px
-
-
 def lon180(ds, lon = "lon", lat = "lat"):
     if ds[lon].max() > 180:
         ds[lon] = (ds[lon].dims, (((ds[lon].values + 180) % 360) - 180), ds[lon].attrs)
@@ -437,24 +423,6 @@ def aggregate_by_shapefile(da, rname, lsm = None, da_crs = crs["rotated_latlon"]
         
         # if time dimension exists, reorder dims to ensure that time is first (needed for assigning Channel Island values)
         if "time" in region_avg.dims: region_avg = region_avg.transpose("time", "region", ...)
-
-        # if Channel Islands appear in shapefile, assign region manually
-        if "Channel Islands" in sf.geo_region.tolist() and np.isnan(region_avg.sel(region = region_avg.geo_region == "Channel Islands").max()):
-            ci_r = sf.geo_region.tolist().index("Channel Islands")
-            ci_px = channel_islands[da.model_id]
-            
-            # if dataset, loop over variables of interest & drop the rest
-            if type(da) == xr.core.dataset.Dataset:
-                for varnm in varnms:
-                    if "time" in da.coords:
-                        region_avg[varnm][:,ci_r] = da[varnm][:,ci_px[1], ci_px[0]]
-                    else:
-                        region_avg[varnm][ci_r] = da[varnm][ci_px[1], ci_px[0]]
-            else:
-                if "time" in da.coords:
-                    region_avg[:,ci_r] = da[:,ci_px[1], ci_px[0]]
-                else:
-                    region_avg[ci_r] = da[ci_px[1], ci_px[0]]
 
         regions.append(region_avg)
     regions = xr.concat(regions, "region").sortby("region")
