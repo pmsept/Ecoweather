@@ -160,6 +160,9 @@
     'RdYlBu_r': (min, max) => chroma.scale('RdYlBu').domain([max, min]),
     'YlOrRd': (min, max) => chroma.scale('YlOrRd').domain([min, max]),
     'BrBG': (min, max) => chroma.scale('BrBG').domain([min, max]),
+    'YlGnBl': (min, max) => chroma.scale('YlGnBl').domain([min, max]),
+    'inferno': (min, max) => chroma.scale('inferno').domain([min, max]),
+    'cividis': (min, max) => chroma.scale('cividis').domain([min, max]),
   }
 
   // Colourscales from https://open-innovations.org/projects/hexmaps/builder.html
