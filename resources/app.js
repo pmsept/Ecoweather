@@ -1,50 +1,157 @@
 (() => {
   const data_config = {
-    'ann_rain_2019': {
-      'centred': true,
-      'colourscale': 'RdYlBu_r',
-      'dp': 3,
-      'title': 'Observed rainfall anomaly in 2019',
-      'units': 'mm/day',
-    },
     'winter_rain_2030s': {
       'centred': true,
       'colourscale': 'BrBG',
       'dp': 3,
-      'title': 'Change in winter rainfall (2030s)',
-      'units': 'mm/day',
+      'title': 'Change in winter rainfall',
+      'units': '2030s, %',
+    },
+    'winter_rain_2060s': {
+      'centred': true,
+      'colourscale': 'BrBG',
+      'dp': 3,
+      'title': 'Change in winter rainfall',
+      'units': '2060s, %',
+    },
+    'summer_rain_2030s': {
+      'centred': true,
+      'colourscale': 'BrBG',
+      'dp': 3,
+      'title': 'Change in summer rainfall',
+      'units': '2030s, %',
+    },
+    'summer_rain_2060s': {
+      'centred': true,
+      'colourscale': 'BrBG',
+      'dp': 3,
+      'title': 'Change in summer rainfall',
+      'units': '2060s, %',
     },
     'tas_2060s': {
       'colourscale': 'YlOrRd',
       'dp': 3,
-      'title': 'Annual mean change in temperature (2060s)',
-      'units': '°C',
+      'title': 'Change in annual temperature',
+      'units': '2060s, °C',
     },
-    'drought_day_change_2065': {
+    'tas_2030s': {
+      'colourscale': 'YlOrRd',
+      'dp': 3,
+      'title': 'Change in annual temperature',
+      'units': '2030s, °C',
+    },
+    'spei6dd_2030s': {
       'colourscale': 'YlOrRd',
       'dp': 3,
       'title': 'Change in number of days experiencing drought',
-      'units': 'days',
+      'units': '2030s, days',
     },
-    'max5day_rain_mm_change_2065': {
+    'spei6dd_2060s': {
+      'colourscale': 'YlOrRd',
+      'dp': 3,
+      'title': 'Change in number of days experiencing drought',
+      'units': '2060s, days',
+    },
+    'rx5day_2030s': {
       'centred': true,
       'colourscale': 'BrBG',
       'dp': 3,
-      'title': 'Change in amount of rain falling over wettest 5 days of the year',
-      'units': 'mm/day',
+      'title': 'Change in rain falling over wettest 5 days of the year',
+      'units': '2030s, %',
     },
-    'number_heatwave_days_change_2065': {
+    'rx5day_2060s': {
+      'centred': true,
+      'colourscale': 'BrBG',
+      'dp': 3,
+      'title': 'Change in rain falling over wettest 5 days of the year',
+      'units': '2060s, %',
+    },
+    'ndhi_2030s': {
       'colourscale': 'YlOrRd',
       'dp': 3,
-      'title': 'Change in number of days classed as heatwaves',
-      'units': 'days',
+      'title': 'Change in number of dangerously hot days',
+      'units': '2030s, days',
     },
-    'warmest_dayofyear_change_oC_2065': {
+    'ndhi_2060s': {
+      'colourscale': 'YlOrRd',
+      'dp': 3,
+      'title': 'Change in number of dangerously hot days',
+      'units': '2060s, days',
+    },
+    'r99ptot_2030s': {
+      'centred': true,
+      'colourscale': 'BrBG',
+      'dp': 3,
+      'title': 'Change in amount of extremely heavy rain',
+      'units': '2030s, %',
+    },
+    'r99ptot_2060s': {
+      'centred': true,
+      'colourscale': 'BrBG',
+      'dp': 3,
+      'title': 'Change in amount of extremely heavy rain',
+      'units': '2060s, %',
+    },
+    'maxtmax_2030s': {
       'colourscale': 'YlOrRd',
       'dp': 3,
       'title': 'Change in temperature of warmest day of year',
-      'units': '°C',
-    }
+      'units': '2030s, °C',
+    },
+    'maxtmax_2060s': {
+      'colourscale': 'YlOrRd',
+      'dp': 3,
+      'title': 'Change in temperature of warmest day of year',
+      'units': '2060s, °C',
+    },
+    'winter_rain_baseline': {
+      'colourscale': 'YlGnBl',
+      'dp': 3,
+      'title': 'Average winter rainfall',
+      'units': '1981-2010, mm/day',
+    },
+    'summer_rain_baseline': {
+      'colourscale': 'YlGnBl',
+      'dp': 3,
+      'title': 'Average summer rainfall',
+      'units': '1981-2010, mm/day',
+    },
+    'tas_baseline': {
+      'colourscale': 'cividis',
+      'dp': 3,
+      'title': 'Average annual temperature',
+      'units': '1981-2010, °C',
+    },
+    'spei6dd_baseline': {
+      'colourscale': 'YlOrRd',
+      'dp': 3,
+      'title': 'Average number of days experiencing drought',
+      'units': '1981-2010, days',
+    },
+    'rx5day_baseline': {
+      'colourscale': 'YlGnBl',
+      'dp': 3,
+      'units': '1981-2010, mm/day',
+      'title': 'Average amount of rain falling over the wettest 5 days of the year',
+    },
+    'ndhi_baseline': {
+      'colourscale': 'inferno',
+      'dp': 3,
+      'title': 'Average number of dangerously hot days per year',
+      'units': '1981-2010',
+    },
+    'r99ptot_baseline': {
+      'colourscale': 'YlGnBl',
+      'dp': 3,
+      'title': 'Proportion of extremely heavy rain',
+      'units': '1981-2010, %',
+    },
+    'maxtmax_baseline': {
+      'colourscale': 'YlOrRd',
+      'dp': 3,
+      'title': 'Average temperature of warmest day of year',
+      'units': '1981-2010, °C',
+    }    
   };
 
   // https://colorbrewer2.org
