@@ -131,3 +131,4 @@ dmypy.json
 # Ignore some unnecessary data files
 constituency_calculations/westminster/*
 gridded_data/plot-explorer-data/*.nc
+constituency_calculations/PCON_MAY_2024_UK_BFE/PCON_MAY_2024_UK_BFE.shp
