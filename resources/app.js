@@ -184,7 +184,9 @@
   const hex = new ODI.hexmap(
     document.querySelector('.hexmap__outer'),
     {
-      'hexjson': 'resources/climate_projections.hexjson',
+      // Choose hexjson file to plot
+      // 'hexjson': 'resources/climate_new_constituencies.hexjson',
+      'hexjson': 'resources/UKCP18_projections.hexjson',
       'ready': () => {
         // Build dropdown options
         const hexmap_select = document.querySelector('.hexmap__select');
