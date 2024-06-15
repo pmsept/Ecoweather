@@ -1,157 +1,91 @@
 (() => {
   const data_config = {
-    'winter_rain_2030s': {
+    'cdd_anom': {
       'centred': true,
       'colourscale': 'BrBG',
       'dp': 3,
-      'title': 'Change in winter rainfall',
-      'units': '%, 2030s',
+      'title': 'cdd anom',
+      'units': '',
     },
-    'winter_rain_2060s': {
+    'cdd_trend': {
       'centred': true,
       'colourscale': 'BrBG',
       'dp': 3,
-      'title': 'Change in winter rainfall',
-      'units': '%, 2060s',
+      'title': 'cdd trend',
+      'units': '',
     },
-    'summer_rain_2030s': {
+    'maxtmax_anom': {
+      'colourscale': 'YlOrRd',
+      'dp': 3,
+      'title': 'Change in temperature of warmest day of year [ANOM]',
+      'units': '°C',
+    },
+    'prdjf_anom': {
       'centred': true,
       'colourscale': 'BrBG',
       'dp': 3,
-      'title': 'Change in summer rainfall',
-      'units': '%, 2030s',
+      'title': 'Precipitation winter anom',
+      'units': 'mm/day',
     },
-    'summer_rain_2060s': {
+    'prdjf_trend': {
       'centred': true,
       'colourscale': 'BrBG',
       'dp': 3,
-      'title': 'Change in summer rainfall',
-      'units': '%, 2060s',
+      'title': 'Precipitation winter trend',
+      'units': 'mm/day',
     },
-    'tas_2060s': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Change in annual temperature',
-      'units': '°C, 2060s',
-    },
-    'tas_2030s': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Change in annual temperature',
-      'units': '°C, 2030s',
-    },
-    'spei6dd_2030s': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Change in number of days experiencing drought',
-      'units': 'days, 2030s',
-    },
-    'spei6dd_2060s': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Change in number of days experiencing drought',
-      'units': 'days, 2060s',
-    },
-    'rx5day_2030s': {
+    'prjja_anom': {
       'centred': true,
       'colourscale': 'BrBG',
       'dp': 3,
-      'title': 'Change in rain falling over wettest 5 days of the year',
-      'units': '%, 2030s',
+      'title': 'Precipitation summer anom',
+      'units': 'mm/day',
     },
-    'rx5day_2060s': {
+    'prjja_trend': {
       'centred': true,
       'colourscale': 'BrBG',
       'dp': 3,
-      'title': 'Change in rain falling over wettest 5 days of the year',
-      'units': '%, 2060s',
+      'title': 'Precipitation summer trend',
+      'units': 'mm/day',
     },
-    'ndhi_2030s': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Change in number of dangerously hot days',
-      'units': 'days, 2030s',
-    },
-    'ndhi_2060s': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Change in number of dangerously hot days',
-      'units': 'days, 2060s',
-    },
-    'r99ptot_2030s': {
+    'rx5day_anom': {
       'centred': true,
-      'colourscale': 'BrBG',
-      'dp': 3,
-      'title': 'Change in amount of extremely heavy rain',
-      'units': '%, 2030s',
-    },
-    'r99ptot_2060s': {
-      'centred': true,
-      'colourscale': 'BrBG',
-      'dp': 3,
-      'title': 'Change in amount of extremely heavy rain',
-      'units': '%, 2060s',
-    },
-    'maxtmax_2030s': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Change in temperature of warmest day of year',
-      'units': '°C, 2030s',
-    },
-    'maxtmax_2060s': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Change in temperature of warmest day of year',
-      'units': '°C, 2060s',
-    },
-    'winter_rain_baseline': {
       'colourscale': 'YlGnBl',
       'dp': 3,
-      'title': 'Average winter rainfall',
-      'units': 'mm/day, 1981-2010',
+      'title': 'Average amount of rain falling over the wettest 5 days of the year [ANOM]',
+      'units': 'mm/day',
     },
-    'summer_rain_baseline': {
+    'rx5day_trend': {
+      'centred': true,
       'colourscale': 'YlGnBl',
       'dp': 3,
-      'title': 'Average summer rainfall',
-      'units': 'mm/day, 1981-2010',
+      'title': 'Average amount of rain falling over the wettest 5 days of the year [TREND]',
+      'units': 'mm/day',
     },
-    'tas_baseline': {
-      'colourscale': 'cividis',
-      'dp': 3,
-      'title': 'Average annual temperature',
-      'units': '°C, 1981-2010',
-    },
-    'spei6dd_baseline': {
+    'txx_anom': {
       'colourscale': 'YlOrRd',
       'dp': 3,
-      'title': 'Average number of days experiencing drought',
-      'units': 'days, 1981-2010',
+      'title': 'txx anom',
+      'units': '°C',
     },
-    'rx5day_baseline': {
-      'colourscale': 'YlGnBl',
-      'dp': 3,
-      'units': 'mm/day, 1981-2010',
-      'title': 'Average amount of rain falling over the wettest 5 days of the year',
-    },
-    'ndhi_baseline': {
-      'colourscale': 'inferno',
-      'dp': 3,
-      'title': 'Average number of dangerously hot days per year',
-      'units': '1981-2010',
-    },
-    'r99ptot_baseline': {
-      'colourscale': 'YlGnBl',
-      'dp': 3,
-      'title': 'Proportion of extremely heavy rain',
-      'units': '%, 1981-2010',
-    },
-    'maxtmax_baseline': {
+    'txx_trend': {
       'colourscale': 'YlOrRd',
       'dp': 3,
-      'title': 'Average temperature of warmest day of year',
-      'units': '°C, 1981-2010',
-    }    
+      'title': 'txx trend',
+      'units': '°C',
+    },
+    't_anom': {
+      'colourscale': 'YlOrRd',
+      'dp': 3,
+      'title': 't anom',
+      'units': '°C',
+    },
+    't_trend': {
+      'colourscale': 'YlOrRd',
+      'dp': 3,
+      'title': 't trend',
+      'units': '°C',
+    }
   };
 
   // https://colorbrewer2.org
@@ -185,8 +119,7 @@
     document.querySelector('.hexmap__outer'),
     {
       // Choose hexjson file to plot
-      // 'hexjson': 'resources/climate_new_constituencies.hexjson',
-      'hexjson': 'resources/UKCP18_projections.hexjson',
+      'hexjson': 'resources/climate_new_constituencies.hexjson',
       'ready': () => {
         // Build dropdown options
         const hexmap_select = document.querySelector('.hexmap__select');
