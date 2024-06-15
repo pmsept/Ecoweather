@@ -8,51 +8,60 @@
   <meta name="twitter:site" content="@cmbrierley">
   <meta name="twitter:url" property="og:url" content="">
   <meta name="twitter:title" property="og:title" content="Climate change by constituency over Great Britain">
-  <meta name="twitter:description" property="og:description" content="The 2017 UK parliamentary constituencies as a point-topped hex map.">
+  <meta name="twitter:description" property="og:description" content="The 2024 UK parliamentary constituencies as a point-topped hex map.">
   <meta name="twitter:image" property="og:image" content="">
   <link rel="stylesheet" href="https://oacd-ucl.github.io/assets/main.css" type="text/css">
-  <link rel="stylesheet" href="./resources/app.css?v=1" type="text/css">
+  <link rel="stylesheet" href="./resources/app.css?v=2" type="text/css">
 </head>
 <body>
-  <img src="./resources/ucl-banner-land-brightblue-rgb.png" style="width: 100%;" />
+  <img src="./resources/ucl-logo.svg" style="width: 100%;" />
 
   <header class="hexmap-header">
-    <h1>Climate change projections by constituency over Great Britain</h1>
-    <h4>Use the drop down menuu to select a weather variable and time period, then hover over the map to find the values for each individual constituency.</h4>
-  </header>
-
-  <figure class="hexmap">
-    <select class="hexmap__select hexmap__section"></select>
-    <div class="hexmap__outer hexmap__section"></div>
-    <div class="hexmap__colourbar">
-      <div class="hexmap__colourbar__inner"></div>
-      <div class="hexmap__colourbar__labels">
-        <span class="hexmap__colourbar__min"></span>
-        <span class="hexmap__colourbar__label"></span>
-        <span class="hexmap__colourbar__max"></span>
-      </div>
+    <div class="container">
+      <h1>Climate change projections by constituency over Great Britain</h1>
+      <p>Use the drop down menu to select a weather variable and time period, then hover over the map to find the values for each individual constituency.</p>
     </div>
-  </figure>
-
+  </header>
+  
+  <div class="hexmap-body">
+    <div class="container hexmap-body__container">
+      <figure class="hexmap">
+        <select class="hexmap__select hexmap__section"></select>
+        <div class="hexmap__main">
+          <div class="hexmap__outer hexmap__section"></div>
+          <div class="hexmap__aside">
+            <div class="hexmap__colourbar">
+              <div class="hexmap__colourbar__inner"></div>
+              <div class="hexmap__colourbar__labels">
+                <span class="hexmap__colourbar__min"></span>
+                <span class="hexmap__colourbar__label"></span>
+                <span class="hexmap__colourbar__max"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figure>
+      
+      <div class="hexmap-summary">
+        <p>These projections are taken from the Met Office's <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp">UKCP18 dataset</a>. They represent the changes in climate of the 2030s and 2060s, compared to 1981-2010 (you can also see the values during this baseline period). This data is the average of an 'ensemble' of climate models with different physics that are then downscaled to an spatial grid of 12km. The projections use a scenarios of global carbon emissions called "RCP8.5", which thankfully we are currently not following. The variables that are currently available to look at are:</p>
+        <ul>
+          <li> annual temperature </li>
+          <li> winter rainfall (technically this is precipitation, so it also factors in snowfall)</li>
+          <li> summer rainfall </li>
+          <li> number of days experiencing drought per year </li>
+          <li> change in the number of days categorised as dangerous hot </li>
+          <li> maximum temperature on the warmest day of the year </li>
+          <li> rain falling over the wettest 5 days of the year - related to river flooding</li>
+          <li> the proportion of annual rainfall that falls as extremely heavy rates - related to flash flooding</li>
+        </ul>
+        
+        <p>This analysis of projections was undertaken by Georgia Willits as part of her dissertation research for her <a href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/climate-change-msc">Climate Change MSc</a> at <a href="https://www.geog.ucl.ac.uk/">UCL Geography</a>. The hexmap code was written by <a href="https://open-innovations.org/projects/hexmaps/">Open Innovations</a> and deployed for this webpage by <a href="https://www.bbk.ac.uk/our-staff/profile/9435743/hannah-woodward">Hannah Woodward</a>. The climate data was downloaded and curated by Dr Clair Barnes, as part of a project run by <a href="https://www.ucl.ac.uk/statistics/research/ukcordex">UCL Statistical Science</a>. Prof. <a href="https://www.geog.ucl.ac.uk/people/academic-staff/chris-brierley">Chris Brierley</a> supervised the research.</p>
+      </div>
+    </div> 
+  </div>
+  
   <script type="text/javascript" src="./resources/odi.hexmap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js" integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="text/javascript" src="./resources/app.js"></script>
-  
-  <div>
-    <h4>These projections are taken from the Met Office's <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp">UKCP18 dataset</a>. They represent the changes in climate of the 2030s and 2060s, compared to 1981-2010 (you can also see the values during this baseline period). This data is the average of an 'ensemble' of climate models with different physics that are then downscaled to an spatial grid of 12km. The projections use a scenarios of global carbon emissions called "RCP8.5", which thankfully we are currently not following. The variables that are currently available to look at are:
-      <ul>
-        <li> annual temperature </li>
-        <li> winter rainfall (technically this is precipitation, so it also factors in snowfall)</li>
-        <li> summer rainfall </li>
-        <li> number of days experiencing drought per year </li>
-        <li> change in the number of days categorised as dangerous hot </li>
-        <li> maximum temperature on the warmest day of the year </li>
-        <li> rain falling over the wettest 5 days of the year - related to river flooding</li>
-        <li> the proportion of annual rainfall that falls as extremely heavy rates - related to flash flooding</li>
-      </ul>
-      This analysis of projections was undertaken by Georgia Willits as part of her dissertation research for her <a href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/climate-change-msc">Climate Change MSc</a> at <a href="https://www.geog.ucl.ac.uk/">UCL Geography</a>. The hexmap code was written by <a href="https://open-innovations.org/projects/hexmaps/">Open Innovations</a> and deployed for this webpage by Hannah Woodward. The climate data was downloaded and curated by Dr Clair Barnes, as part of a project run by <a href="https://www.ucl.ac.uk/statistics/research/ukcordex">UCL Statistical Science</a>. Prof. <a href="https://www.geog.ucl.ac.uk/people/academic-staff/chris-brierley">Chris Brierley</a> supervised the research.
-      <h4>
-  
-  </div> 
+  <script type="text/javascript" src="./resources/app.js?v=2"></script>
 </body>
 </html>
