@@ -1,110 +1,98 @@
 (() => {
-  const data_config = {
-    'prdjf_proj': {
-      'centred': true,
+  const data_periods = {
+    'obs': {
+      'title': '1991-2020 vs 1961-1990'
+    },
+    'proj': {
+      'title': '2021-2040 vs 1981-2010'
+    }
+  };
+
+  const data_vars = {
+    'prdjf': {
       'colourscale': 'BrBG',
       'dp': 3,
       'title': 'Winter rainfall',
       'units': '%',
-      'time period': '2021-2040 vs 1981-2010',
       'description': 'Winter rainfall',
-      'min': -10,
-      'max': 10,
+      'periods': {
+        'obs': {
+          'min': -25,
+          'max': 25
+        },
+        'proj': {
+          'min': -10,
+          'max': 10
+        }
+      }
     },
-    'prdjf_obs': {
-      'centred': true,
-      'colourscale': 'BrBG',
-      'dp': 3,
-      'title': 'Winter rainfall',
-      'units': '%',
-      'time period': '1991-2020 vs 1961-1990',
-      'description': 'Winter rainfall',
-      'min': -25,
-      'max': 25,
-    },
-    'prjja_proj': {
-      'centred': true,
+    'prjja': {
       'colourscale': 'BrBG',
       'dp': 3,
       'title': 'Summer rainfall',
       'units': '%',
-      'time period': '2021-2040 vs 1981-2010',
       'description': 'Summer rainfall',
-      'min': -10,
-      'max': 10,
+      'periods': {
+        'obs': {
+          'min': -25,
+          'max': 25
+        },
+        'proj': {
+          'min': -10,
+          'max': 10
+        }
+      }
     },
-    'prjja_obs': {
-      'centred': true,
-      'colourscale': 'BrBG',
-      'dp': 3,
-      'title': 'Summer rainfall',
-      'units': '%',
-      'time period': '1991-2020 vs 1961-1990',
-      'description': 'Summer rainfall',
-      'min': -25,
-      'max': 25,
-    },
-    'rx5day_proj': {
-      'centred': true,
+    'rx5day': {
       'colourscale': 'YlGnBl',
       'dp': 3,
       'title': 'Rain on wettest 5 days of year',
       'units': '%',
-      'time period': '2021-2040 vs 1981-2010',
       'description': 'Flooding is caused by heavy rainfall, which can lead to rivers overflowing, flash floods and landslides. The amount of rain that falls in a single day can be important, but the amount that falls over a few days can be even more so. This indicator shows the percentage change in amount of rain that falls on the five wettest consecutive days of the year.',
-      'min': -10,
-      'max': 10,
+      'periods': {
+        'obs': {
+          'min': -25,
+          'max': 25
+        },
+        'proj': {
+          'min': -10,
+          'max': 10
+        }
+      }
     },
-    'rx5day_obs': {
-      'centred': true,
-      'colourscale': 'YlGnBl',
-      'dp': 3,
-      'title': 'Rain on wettest 5 days of year',
-      'units': '%',
-      'time period': '1991-2020 vs 1961-1990',
-      'description': 'Flooding is caused by heavy rainfall, which can lead to rivers overflowing, flash floods and landslides. The amount of rain that falls in a single day can be important, but the amount that falls over a few days can be even more so. This indicator shows the percentage change in amount of rain that falls on the five wettest consecutive days of the year.',
-      'min': -25,
-      'max': 25,
-    },
-    'txx_proj': {
+    'txx': {
       'colourscale': 'YlOrRd',
       'dp': 3,
       'title': 'Warmest day of year',
       'units': '°C',
-      'time period': '2021-2040 vs 1981-2010',
       'description': 'Heatwaves are an increasing threat udner climate change. They can affect the health of people, animals and plants, and can also affect the amount of energy we use to cool our homes and buildings. They can be rather tricky to measure, so instead this indicator shows the change in the temperature of the warmest day of the average year.',
-      'min': 0,
-      'max': 1,
+      'periods': {
+        'obs': {
+          'min': 0,
+          'max': 3
+        },
+        'proj': {
+          'min': 0,
+          'max': 1
+        }
+      }
     },
-    'txx_obs': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Warmest day of year',
-      'units': '°C',
-      'time period': '1991-2020 vs 1961-1990',
-      'description': 'Heatwaves are an increasing threat udner climate change. They can affect the health of people, animals and plants, and can also affect the amount of energy we use to cool our homes and buildings. They can be rather tricky to measure, so instead this indicator shows the change in the temperature of the warmest day of the average year.',
-      'min': 0,
-      'max': 3,
-    },
-    't_proj': {
+    't': {
       'colourscale': 'YlOrRd',
       'dp': 3,
       'title': 'Temperature',
       'units': '°C',
-      'time period': '2021-2040 vs 1981-2010',
       'description': 'Changes in temperature is a headline response of climate change. This is because it is easy(ish) to measure and many more consequential impacts track it. This indicator shows the change in the annual temperature, averaged over all the years.',
-      'min': 0,
-      'max': 1,
-    },
-    't_obs': {
-      'colourscale': 'YlOrRd',
-      'dp': 3,
-      'title': 'Temperature',
-      'units': '°C',
-      'time period': '1991-2020 vs 1961-1990',
-      'description': 'Changes in temperature is a headline response of climate change. This is because it is easy(ish) to measure and many more consequential impacts track it. This indicator shows the change in the annual temperature, averaged over all the years.',
-      'min': 0,
-      'max': 1,
+      'periods': {
+        'obs': {
+          'min': 0,
+          'max': 1
+        },
+        'proj': {
+          'min': 0,
+          'max': 1
+        }
+      }
     }
   };
 
@@ -119,22 +107,6 @@
     'cividis': (min, max) => chroma.scale('cividis').domain([min, max]),
   }
 
-  // Colourscales from https://open-innovations.org/projects/hexmaps/builder.html
-  // const colourscales = {
-  //   'Viridis': 'rgb(122,76,139) 0%, rgb(124,109,168) 12.5%, rgb(115,138,177) 25%, rgb(107,164,178) 37.5%, rgb(104,188,170) 50%, rgb(133,211,146) 62.5%, rgb(189,229,97) 75%, rgb(254,240,65) 87.5%, rgb(254,240,65) 100%',
-  //   'ODI': 'rgb(114,46,165) 0%, rgb(230,0,124) 50%, rgb(249,188,38) 100%',
-  //   'Heat': 'rgb(0,0,0) 0%, rgb(128,0,0) 25%, rgb(255,128,0) 50%, rgb(255,255,128) 75%, rgb(255,255,255) 100%',
-  //   'IMD-low-high': 'rgb(8,64,129) 0%, rgb(8,104,172) 10%, rgb(43,140,190) 20%, rgb(78,179,211) 30%, rgb(123,204,196) 40%, rgb(168,221,181) 50%, rgb(204,235,197) 60%, rgb(224,243,219) 70%, rgb(238,252,217) 80%, rgb(251,252,244) 90%, rgb(251,252,244) 100%',
-  //   'IMD-high-low': 'rgb(251,252,244) 0%, rgb(238,252,217) 10%, rgb(224,243,219) 20%, rgb(204,235,197) 30%, rgb(168,221,181) 40%, rgb(123,204,196) 50%, rgb(78,179,211) 60%, rgb(43,140,190) 70%, rgb(8,104,172) 80%, rgb(8,64,129) 90%, rgb(8,64,129) 100%',
-  //   'Planck': 'rgb(0,0,255) 0%, rgb(0,112,255) 16.666%, rgb(0,221,255) 33.3333%, rgb(255,237,217) 50%, rgb(255,180,0) 66.666%, rgb(255,75,0) 100%',
-  //   'EPC': '#ef1c3a 1%, #ef1c3a 20.5%, #f78221 20.5%, #f78221 38.5%, #f9ac64 38.5%, #f9ac64 54.5%, #ffcc00 54.5%, #ffcc00 68.5%, #8cc63f 68.5%, #8cc63f 80.5%, #1bb35b 80.5%, #1bb35b 91.5%, #00855a 91.5%, #00855a 100%',
-  //   'Plasma': 'rgb(12,7,134) 0%, rgb(82,1,163) 12.5%, rgb(137,8,165) 25%, rgb(184,50,137) 37.5%, rgb(218,90,104) 50%, rgb(243,135,72) 62.5%, rgb(253,187,43) 75%, rgb(239,248,33) 87.5%',
-  //   'Referendum': '#4BACC6 0%, #B6DDE8 50%, #FFF380 50%, #FFFF00 100%',
-  //   'Leodis': '#2254F4 0%, #F9BC26 50%, #ffffff 100%',
-  //   'Longside': '#801638 0%, #addde6 100%',
-  //   'Black': '#000000 0%, #000000 100%'
-  // };
-
   const hex = new ODI.hexmap(
     document.querySelector('.hexmap__outer'),
     {
@@ -142,32 +114,79 @@
       'hexjson': 'resources/climate_new_constituencies.hexjson',
       'ready': () => {
         // Build dropdown options
-        const hexmap_select = document.querySelector('.hexmap__select');
-        for (const key in data_config) {
+        const hexmap_select_var = document.querySelector('[data-hexmap-select-var]');
+        for (const key in data_vars) {
           const hexmap_opt = document.createElement('option');
-          hexmap_opt.innerText = getLabel(key, data_config[key]);
+          hexmap_opt.innerText = getLabel(key, data_vars[key]);
           hexmap_opt.value = key;
-          hexmap_select.appendChild(hexmap_opt);
+          hexmap_select_var.appendChild(hexmap_opt);
+        }
+
+        const hexmap_select_period = document.querySelector('[data-hexmap-select-period]');
+        for (const key in data_periods) {
+          const hexmap_opt = document.createElement('option');
+          hexmap_opt.innerText = data_periods[key]['title'];
+          hexmap_opt.value = key;
+          hexmap_select_period.appendChild(hexmap_opt);
         }
 
         // Load dataset from query parameter
         const params = new URLSearchParams(window.location.search);
-        let active_key = params.get('data');
-        if (!active_key || !(active_key in data_config)) {
-          active_key = hexmap_select.value;
+        let active_keys = {
+          'var': params.get('var'),
+          'period': params.get('period')
+        }
+        if (!active_keys['var'] || !(active_keys['var'] in data_vars)) {
+          active_keys['var'] = hexmap_select_var.value;
+        }
+        if (!active_keys['period'] || !(active_keys['period'] in data_periods)) {
+          active_keys['period'] = hexmap_select_period.value;
         }
 
         // Store some useful attrs for later
+        let active_key = active_keys['var']  + '_' + active_keys['period'] ;
         hex.extra = {
           'activeKey': active_key,
-          'colourbar': document.querySelector('.hexmap__colourbar')
+          'colourbar': document.querySelector('.hexmap__colourbar'),
+          'selectVar': hexmap_select_var,
+          'selectPeriod': hexmap_select_period
         };
 
         // Update hexmap & add auto-update to select change
-        hexmap_select.value = active_key;
-        updateHexmap(hex, data_config, colourscales, active_key)
-        hexmap_select.addEventListener('change', e => {
-          updateHexmap(hex, data_config, colourscales, e.target.value);
+        hexmap_select_var.value = active_keys['var'];
+        updateHexmap(
+          hex,
+          data_vars,
+          data_periods,
+          colourscales,
+          {
+            'period': active_keys['period'],
+            'var': active_keys['var']
+          }
+        )
+        hexmap_select_var.addEventListener('change', e => {
+          updateHexmap(
+            hex,
+            data_vars,
+            data_periods,
+            colourscales,
+            {
+              'period': hexmap_select_period.value,
+              'var': e.target.value
+            }
+          );
+        });
+        hexmap_select_period.addEventListener('change', e => {
+          updateHexmap(
+            hex,
+            data_vars,
+            data_periods,
+            colourscales,
+            {
+              'period': e.target.value,
+              'var': hexmap_select_var.value
+            }
+          );
         });
       }
     }
@@ -193,7 +212,7 @@
         region_contact += ' (' + e.data.data.first_party + ')';
       }
     }
-    const region_value = getRegionValue(active_key, e.data.data, data_config);
+    const region_value = getRegionValue(active_key, e.data.data, data_vars);
     tip.innerHTML = [region_name, region_contact, region_value]
       .filter(item => item !== '')
       .join('<br>');
@@ -243,13 +262,32 @@
     return parseFloat(value).toFixed(dp);
   }
 
-  function updateHexmap(obj, all_data_config, colourscales, key) {
-    if (!(key in all_data_config)) {
-      console.error('Error: ' + key + ' not found in config');
+  function updateHexmap(
+    obj,
+    all_vars_config,
+    all_period_config,
+    colourscales,
+    keys
+  ) {
+    const key_var = keys['var'];
+    if (!(key_var in all_vars_config)) {
+      console.error('Error: ' + key_var + ' not found in config');
       return;
     }
 
-    const config = all_data_config[key];
+    const key_period = keys['period'];
+    if (!(key_period in all_period_config)) {
+      console.error('Error: ' + key_period + ' not found in config');
+      return;
+    }
+
+    // Override variable config with any specific to variable period
+    let config = all_vars_config[key_var];
+    for (let k in all_vars_config[key_var]['periods'][key_period]) {
+      config[k] = all_vars_config[key_var]['periods'][key_period][k];
+    }
+
+    const key = keys['var'] + '_' + keys['period'];
     const data = Object.values(obj.mapping.hexes)
       .map(item => item[key] || Number.NaN)
       .filter(item => !Number.isNaN(item));
@@ -263,6 +301,14 @@
       vmax = abs_max;
     }
 
+    // Override with vmin/vmax if defined
+    vmin = config['min'] || vmin;
+    vmax = config['max'] || vmax;
+
+    // Update description
+    const hexmap_select_desc = document.querySelector('[data-hexmap-select-description]');
+    hexmap_select_desc.innerText = config.description;
+
     // NB `colourscale_full` is a chroma.scale object (https://gka.github.io/chroma.js/#color-scales)
     const colourscale_full = colourscales[config.colourscale](vmin, vmax);
     obj.updateColours(r => colourscale_full(obj.mapping.hexes[r][key]));
@@ -271,8 +317,13 @@
 
     // Update url
     const url = new URL(window.location)
-    if (url.searchParams.get('data') != key) {
-      url.searchParams.set('data', key);
+    if (url.searchParams.get('var') != key_var) {
+      url.searchParams.set('var', key_var);
+    }
+    if (url.searchParams.get('period') != key_period) {
+      url.searchParams.set('period', key_period);
+    }
+    if (new URL(window.location) !== url) {
       window.history.replaceState(null, '', url);
     }
 

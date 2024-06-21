@@ -178,3 +178,13 @@
     width: 55%;
   }
 }
+
+@media only screen and (min-width: 72rem) {
+  .hexmap__selects {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hexmap__select {
+    width: 49%;
+  }
+}
