@@ -44,7 +44,7 @@
       }
     },
     'rx5day': {
-      'colourscale': 'YlGnBl',
+      'colourscale': 'YlGnBu',
       'dp': 3,
       'title': 'Rain on wettest 5 days of year',
       'units': '%',
@@ -102,7 +102,7 @@
     'RdYlBu_r': (min, max) => chroma.scale('RdYlBu').domain([max, min]),
     'YlOrRd': (min, max) => chroma.scale('YlOrRd').domain([min, max]),
     'BrBG': (min, max) => chroma.scale('BrBG').domain([min, max]),
-    'YlGnBl': (min, max) => chroma.scale('YlGnBl').domain([min, max]),
+    'YlGnBu': (min, max) => chroma.scale('YlGnBu').domain([min, max]),
     'inferno': (min, max) => chroma.scale('inferno').domain([min, max]),
     'cividis': (min, max) => chroma.scale('cividis').domain([min, max]),
   }
