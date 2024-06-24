@@ -242,12 +242,13 @@
       return 'No data';
     }
 
+    const key_var = key.split('_').shift();
     let value = data[key];
     let units = '';
-    if (key in conf) {
-      value = getRoundedValue(value, conf[key]['dp']);
-      if ('units' in conf[key]) {
-        units = ' ' + conf[key]['units'];
+    if (key_var in conf) {
+      value = getRoundedValue(value, conf[key_var]['dp']);
+      if ('units' in conf[key_var]) {
+        units = ' ' + conf[key_var]['units'];
       }
     }
 
