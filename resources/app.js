@@ -1,11 +1,11 @@
 (() => {
   const data_periods = {
     'obs': {
-      'years': '1991-2020 vs 1961-1990'
+      'years': '1991-2020 vs 1961-1990',
       'title': 'Past changes'
     },
     'proj': {
-      'years': '2021-2040 vs 1981-2010'
+      'years': '2021-2040 vs 1981-2010',
       'title': 'Near-term future'
     }
   };
