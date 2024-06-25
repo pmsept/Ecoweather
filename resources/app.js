@@ -1,10 +1,12 @@
 (() => {
   const data_periods = {
     'obs': {
-      'title': '1991-2020 vs 1961-1990'
+      'years': '1991-2020 vs 1961-1990'
+      'title': 'Past changes'
     },
     'proj': {
-      'title': '2021-2040 vs 1981-2010'
+      'years': '2021-2040 vs 1981-2010'
+      'title': 'Near-term future'
     }
   };
 
@@ -14,7 +16,7 @@
       'dp': 3,
       'title': 'Winter rainfall',
       'units': '%',
-      'description': 'Winter rainfall',
+      'description': 'Winter is the wettest season across most of the UK. Not all the country has the same amount of rainfall, with more falling on the Western side of the country. Therefore it is common to show rainfall changes as percentages. Here winter is taken as December, January and February.',
       'periods': {
         'obs': {
           'min': -25,
@@ -31,7 +33,7 @@
       'dp': 3,
       'title': 'Summer rainfall',
       'units': '%',
-      'description': 'Summer rainfall',
+      'description': 'Summer is drier than winter in many parts of the UK (although East Anglia is dry all year round). It is common to show rainfall changes as percentages, as they are often more interpretable than using mm/day. Here Summer is taken as June, July and August.',
       'periods': {
         'obs': {
           'min': -25,
@@ -82,7 +84,7 @@
       'dp': 3,
       'title': 'Temperature',
       'units': '°C',
-      'description': 'Changes in temperature is a headline response of climate change. This is because it is easy(ish) to measure and many more consequential impacts track it. This indicator shows the change in the annual temperature, averaged over all the years.',
+      'description': 'Changes in temperature are a headline response of climate change. This is because it is easy(ish) to measure and many more consequential impacts track it. This indicator shows the change in the annual temperature, averaged over all the years.',
       'periods': {
         'obs': {
           'min': 0,
