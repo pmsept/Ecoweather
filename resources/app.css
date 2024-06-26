@@ -4,6 +4,10 @@
   padding: 1.5em;
 }
 
+.hexmap-frame {
+  padding: 1.5em;
+}
+
 .hexmap-header {
   background: #fff;
   color: #1d1d1d;
