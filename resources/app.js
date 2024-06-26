@@ -13,7 +13,7 @@
   const data_vars = {
     'prdjf': {
       'colourscale': 'BrBG',
-      'dp': 3,
+      'sf': 2,
       'title': 'Winter rainfall',
       'units': '%',
       'description': 'Winter is the wettest season across most of the UK. Not all the country has the same amount of rainfall, with more falling on the Western side of the country. Therefore it is common to show rainfall changes as percentages. Here winter is taken as December, January and February.',
@@ -30,7 +30,7 @@
     },
     'prjja': {
       'colourscale': 'BrBG',
-      'dp': 3,
+      'sf': 2,
       'title': 'Summer rainfall',
       'units': '%',
       'description': 'Summer is drier than winter in many parts of the UK (although East Anglia is dry all year round). It is common to show rainfall changes as percentages, as they are often more interpretable than using mm/day. Here Summer is taken as June, July and August.',
@@ -47,7 +47,7 @@
     },
     'rx5day': {
       'colourscale': 'YlGnBu',
-      'dp': 3,
+      'sf': 2,
       'title': 'Rain on wettest 5 days of year',
       'units': '%',
       'description': 'Flooding is caused by heavy rainfall, which can lead to rivers overflowing, flash floods and landslides. The amount of rain that falls in a single day can be important, but the amount that falls over a few days can be even more so. This indicator shows the percentage change in amount of rain that falls on the five wettest consecutive days of the year.',
@@ -64,7 +64,7 @@
     },
     'txx': {
       'colourscale': 'YlOrRd',
-      'dp': 3,
+      'sf': 2,
       'title': 'Warmest day of year',
       'units': '°C',
       'description': 'Heatwaves are an increasing threat udner climate change. They can affect the health of people, animals and plants, and can also affect the amount of energy we use to cool our homes and buildings. They can be rather tricky to measure, so instead this indicator shows the change in the temperature of the warmest day of the average year.',
@@ -81,7 +81,7 @@
     },
     't': {
       'colourscale': 'YlOrRd',
-      'dp': 3,
+      'sf': 2,
       'title': 'Temperature',
       'units': '°C',
       'description': 'Changes in temperature are a headline response of climate change. This is because it is easy(ish) to measure and many more consequential impacts track it. This indicator shows the change in the annual temperature, averaged over all the years.',
@@ -257,7 +257,7 @@
     let value = data[key];
     let units = '';
     if (key_var in conf) {
-      value = getRoundedValue(value, conf[key_var]['dp']);
+      value = getRoundedValue(value, conf[key_var]);
       if ('units' in conf[key_var]) {
         units = ' ' + conf[key_var]['units'];
       }
@@ -266,12 +266,15 @@
     return value + units;
   }
 
-  function getRoundedValue(value, dp) {
-    if (!dp) {
-      return value;
+  function getRoundedValue(value, conf) {
+    if ('dp' in conf) {
+      return parseFloat(value).toFixed(conf['dp']);
+    }
+    if ('sf' in conf) {
+      return parseFloat(value).toPrecision(conf['sf']);
     }
 
-    return parseFloat(value).toFixed(dp);
+    return value;
   }
 
   function updateHexmap(
@@ -358,7 +361,7 @@
     }
 
     el.querySelector('.hexmap__colourbar__label').innerText = getLabel(key, conf);
-    el.querySelector('.hexmap__colourbar__min').innerText = getRoundedValue(vmin, conf['dp']);
-    el.querySelector('.hexmap__colourbar__max').innerText = getRoundedValue(vmax, conf['dp']);
+    el.querySelector('.hexmap__colourbar__min').innerText = getRoundedValue(vmin, conf);
+    el.querySelector('.hexmap__colourbar__max').innerText = getRoundedValue(vmax, conf);
   }
 })();
