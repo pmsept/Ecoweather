@@ -117,19 +117,23 @@
       'ready': () => {
         // Build dropdown options
         const hexmap_select_var = document.querySelector('[data-hexmap-select-var]');
-        for (const key in data_vars) {
-          const hexmap_opt = document.createElement('option');
-          hexmap_opt.innerText = getLabel(key, data_vars[key]);
-          hexmap_opt.value = key;
-          hexmap_select_var.appendChild(hexmap_opt);
+        if (hexmap_select_var) {
+          for (const key in data_vars) {
+            const hexmap_opt = document.createElement('option');
+            hexmap_opt.innerText = getLabel(key, data_vars[key]);
+            hexmap_opt.value = key;
+            hexmap_select_var.appendChild(hexmap_opt);
+          }
         }
 
         const hexmap_select_period = document.querySelector('[data-hexmap-select-period]');
-        for (const key in data_periods) {
-          const hexmap_opt = document.createElement('option');
-          hexmap_opt.innerText = data_periods[key]['title'];
-          hexmap_opt.value = key;
-          hexmap_select_period.appendChild(hexmap_opt);
+        if (hexmap_select_period) {
+          for (const key in data_periods) {
+            const hexmap_opt = document.createElement('option');
+            hexmap_opt.innerText = data_periods[key]['title'];
+            hexmap_opt.value = key;
+            hexmap_select_period.appendChild(hexmap_opt);
+          }
         }
 
         // Load dataset from query parameter
@@ -139,10 +143,10 @@
           'period': params.get('period')
         }
         if (!active_keys['var'] || !(active_keys['var'] in data_vars)) {
-          active_keys['var'] = hexmap_select_var.value;
+          active_keys['var'] = Object.values(data_vars).shift();
         }
         if (!active_keys['period'] || !(active_keys['period'] in data_periods)) {
-          active_keys['period'] = hexmap_select_period.value;
+          active_keys['period'] = Object.values(data_periods).shift();
         }
 
         // Store some useful attrs for later
@@ -155,7 +159,12 @@
         };
 
         // Update hexmap & add auto-update to select change
-        hexmap_select_var.value = active_keys['var'];
+        if (hexmap_select_var) {
+          hexmap_select_var.value = active_keys['var'];
+        }
+        if (hexmap_select_period) {
+          hexmap_select_period.value = active_keys['period'];
+        }
         updateHexmap(
           hex,
           data_vars,
@@ -310,7 +319,9 @@
 
     // Update description
     const hexmap_select_desc = document.querySelector('[data-hexmap-select-description]');
-    hexmap_select_desc.innerText = config.description;
+    if (hexmap_select_desc) {
+      hexmap_select_desc.innerText = config.description;
+    }
 
     // NB `colourscale_full` is a chroma.scale object (https://gka.github.io/chroma.js/#color-scales)
     const colourscale_full = colourscales[config.colourscale](vmin, vmax);
