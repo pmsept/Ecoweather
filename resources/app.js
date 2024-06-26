@@ -65,9 +65,9 @@
     'txx': {
       'colourscale': 'YlOrRd',
       'sf': 2,
-      'title': 'Warmest day of year',
+      'title': 'Hottest day of year',
       'units': '°C',
-      'description': 'Heatwaves are an increasing threat udner climate change. They can affect the health of people, animals and plants, and can also affect the amount of energy we use to cool our homes and buildings. They can be rather tricky to measure, so instead this indicator shows the change in the temperature of the warmest day of the average year.',
+      'description': 'Heatwaves are an increasing threat under climate change. They can affect the health of people, animals and plants, and can also affect the amount of energy we use to cool our homes and buildings. They can be rather tricky to measure, so instead this indicator shows the change in the temperature of the hottest day of the average year.',
       'periods': {
         'obs': {
           'min': 0,
