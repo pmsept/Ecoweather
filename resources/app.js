@@ -143,10 +143,10 @@
           'period': params.get('period')
         }
         if (!active_keys['var'] || !(active_keys['var'] in data_vars)) {
-          active_keys['var'] = Object.values(data_vars).shift();
+          active_keys['var'] = Object.keys(data_vars).shift();
         }
         if (!active_keys['period'] || !(active_keys['period'] in data_periods)) {
-          active_keys['period'] = Object.values(data_periods).shift();
+          active_keys['period'] = Object.keys(data_periods).shift();
         }
 
         // Store some useful attrs for later
