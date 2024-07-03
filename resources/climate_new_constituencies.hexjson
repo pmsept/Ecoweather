@@ -8811,7 +8811,7 @@
         "S14000108":{
             "n":"Berwickshire, Roxburgh and Selkirk",
             "r":-12,
-            "q":53,
+            "q":52,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Berwickshire, Roxburgh and Selkirk",
@@ -8828,7 +8828,7 @@
         "S14000066":{
             "n":"Arbroath and Broughty Ferry",
             "r":-5,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Arbroath and Broughty Ferry",
@@ -8845,7 +8845,7 @@
         "S14000076":{
             "n":"Dunfermline and Dollar",
             "r":-7,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Dunfermline and Dollar",
@@ -8862,7 +8862,7 @@
         "S14000063":{
             "n":"Airdrie and Shotts",
             "r":-11,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Airdrie and Shotts",
@@ -8879,7 +8879,7 @@
         "S14000077":{
             "n":"East Kilbride and Strathaven",
             "r":-13,
-            "q":48,
+            "q":47,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"East Kilbride and Strathaven",
@@ -8896,7 +8896,7 @@
         "S14000021":{
             "n":"East Renfrewshire",
             "r":-11,
-            "q":48,
+            "q":47,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"East Renfrewshire",
@@ -8913,7 +8913,7 @@
         "S14000078":{
             "n":"Edinburgh East and Musselburgh",
             "r":-10,
-            "q":54,
+            "q":53,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Edinburgh East and Musselburgh",
@@ -8930,7 +8930,7 @@
         "S14000079":{
             "n":"Edinburgh North and Leith",
             "r":-9,
-            "q":53,
+            "q":52,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Edinburgh North and Leith",
@@ -8947,7 +8947,7 @@
         "S14000081":{
             "n":"Edinburgh South West",
             "r":-10,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Edinburgh South West",
@@ -8964,7 +8964,7 @@
         "S14000064":{
             "n":"Alloa and Grangemouth",
             "r":-7,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Alloa and Grangemouth",
@@ -8981,7 +8981,7 @@
         "S14000088":{
             "n":"Glasgow South West",
             "r":-10,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Glasgow South West",
@@ -8998,7 +8998,7 @@
         "S14000093":{
             "n":"Inverclyde and Renfrewshire West",
             "r":-8,
-            "q":48,
+            "q":47,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Inverclyde and Renfrewshire West",
@@ -9015,7 +9015,7 @@
         "S14000110":{
             "n":"Kilmarnock and Loudoun",
             "r":-13,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Kilmarnock and Loudoun",
@@ -9032,7 +9032,7 @@
         "S14000095":{
             "n":"Livingston",
             "r":-11,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Livingston",
@@ -9049,7 +9049,7 @@
         "S14000045":{
             "n":"Midlothian",
             "r":-11,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Midlothian",
@@ -9066,7 +9066,7 @@
         "S14000099":{
             "n":"Motherwell, Wishaw and Carluke",
             "r":-12,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Motherwell, Wishaw and Carluke",
@@ -9083,7 +9083,7 @@
         "S14000102":{
             "n":"Paisley and Renfrewshire South",
             "r":-10,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Paisley and Renfrewshire South",
@@ -9100,7 +9100,7 @@
         "S14000065":{
             "n":"Angus and Perthshire Glens",
             "r":-5,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Angus and Perthshire Glens",
@@ -9117,7 +9117,7 @@
         "S14000105":{
             "n":"Stirling and Strathallan",
             "r":-6,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Stirling and Strathallan",
@@ -9134,7 +9134,7 @@
         "S14000106":{
             "n":"West Dunbartonshire",
             "r":-7,
-            "q":48,
+            "q":47,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"West Dunbartonshire",
@@ -9151,7 +9151,7 @@
         "S14000098":{
             "n":"Moray West, Nairn and Strathspey",
             "r":-4,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Moray West, Nairn and Strathspey",
@@ -9168,7 +9168,7 @@
         "S14000067":{
             "n":"Argyll, Bute and South Lochaber",
             "r":-5,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Argyll, Bute and South Lochaber",
@@ -9185,7 +9185,7 @@
         "S14000111":{
             "n":"West Aberdeenshire and Kincardine",
             "r":-4,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"West Aberdeenshire and Kincardine",
@@ -9202,7 +9202,7 @@
         "S14000091":{
             "n":"Gordon and Buchan",
             "r":-4,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Gordon and Buchan",
@@ -9219,7 +9219,7 @@
         "S14000071":{
             "n":"Cowdenbeath and Kirkcaldy",
             "r":-7,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Cowdenbeath and Kirkcaldy",
@@ -9236,7 +9236,7 @@
         "S14000061":{
             "n":"Aberdeen South",
             "r":-4,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Aberdeen South",
@@ -9253,7 +9253,7 @@
         "S14000082":{
             "n":"Edinburgh West",
             "r":-9,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Edinburgh West",
@@ -9270,7 +9270,7 @@
         "S14000096":{
             "n":"Lothian East",
             "r":-11,
-            "q":53,
+            "q":52,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Lothian East",
@@ -9287,7 +9287,7 @@
         "S14000107":{
             "n":"Ayr, Carrick and Cumnock",
             "r":-13,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Ayr, Carrick and Cumnock",
@@ -9304,7 +9304,7 @@
         "S14000109":{
             "n":"Central Ayrshire",
             "r":-12,
-            "q":48,
+            "q":47,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Central Ayrshire",
@@ -9321,7 +9321,7 @@
         "S14000051":{
             "n":"Orkney and Shetland",
             "r":0,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Orkney and Shetland",
@@ -9338,7 +9338,7 @@
         "S14000027":{
             "n":"Na h-Eileanan an Iar",
             "r":-2,
-            "q":47,
+            "q":46,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Na h-Eileanan an Iar",
@@ -9355,7 +9355,7 @@
         "S14000048":{
             "n":"North Ayrshire and Arran",
             "r":-10,
-            "q":48,
+            "q":47,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"North Ayrshire and Arran",
@@ -9372,7 +9372,7 @@
         "S14000103":{
             "n":"Perth and Kinross-shire",
             "r":-5,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Perth and Kinross-shire",
@@ -9389,7 +9389,7 @@
         "S14000075":{
             "n":"Dundee Central",
             "r":-6,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Dundee Central",
@@ -9406,7 +9406,7 @@
         "S14000083":{
             "n":"Falkirk",
             "r":-8,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Falkirk",
@@ -9423,7 +9423,7 @@
         "S14000068":{
             "n":"Bathgate and Linlithgow",
             "r":-9,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Bathgate and Linlithgow",
@@ -9440,7 +9440,7 @@
         "S14000094":{
             "n":"Inverness, Skye and West Ross-shire",
             "r":-3,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Inverness, Skye and West Ross-shire",
@@ -9457,7 +9457,7 @@
         "S14000080":{
             "n":"Edinburgh South",
             "r":-10,
-            "q":53,
+            "q":52,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Edinburgh South",
@@ -9474,7 +9474,7 @@
         "S14000073":{
             "n":"Dumfries and Galloway",
             "r":-13,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Dumfries and Galloway",
@@ -9491,7 +9491,7 @@
         "S14000101":{
             "n":"Paisley and Renfrewshire North",
             "r":-9,
-            "q":48,
+            "q":47,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Paisley and Renfrewshire North",
@@ -9508,7 +9508,7 @@
         "S14000062":{
             "n":"Aberdeenshire North and Moray East",
             "r":-3,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Aberdeenshire North and Moray East",
@@ -9525,7 +9525,7 @@
         "S14000069":{
             "n":"Caithness, Sutherland and Easter Ross",
             "r":-2,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Caithness, Sutherland and Easter Ross",
@@ -9542,7 +9542,7 @@
         "S14000084":{
             "n":"Glasgow East",
             "r":-10,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Glasgow East",
@@ -9559,7 +9559,7 @@
         "S14000097":{
             "n":"Mid Dunbartonshire",
             "r":-7,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Mid Dunbartonshire",
@@ -9576,7 +9576,7 @@
         "S14000085":{
             "n":"Glasgow North",
             "r":-9,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Glasgow North",
@@ -9593,7 +9593,7 @@
         "S14000087":{
             "n":"Glasgow South",
             "r":-11,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Glasgow South",
@@ -9610,7 +9610,7 @@
         "S14000089":{
             "n":"Glasgow West",
             "r":-8,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Glasgow West",
@@ -9627,7 +9627,7 @@
         "S14000072":{
             "n":"Cumbernauld and Kirkintilloch",
             "r":-8,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Cumbernauld and Kirkintilloch",
@@ -9644,7 +9644,7 @@
         "S14000070":{
             "n":"Coatbridge and Bellshill",
             "r":-12,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Coatbridge and Bellshill",
@@ -9661,7 +9661,7 @@
         "S14000092":{
             "n":"Hamilton and Clyde Valley",
             "r":-12,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Hamilton and Clyde Valley",
@@ -9678,7 +9678,7 @@
         "S14000104":{
             "n":"Rutherglen",
             "r":-12,
-            "q":49,
+            "q":48,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Rutherglen",
@@ -9712,7 +9712,7 @@
         "S14000060":{
             "n":"Aberdeen North",
             "r":-3,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Aberdeen North",
@@ -9729,7 +9729,7 @@
         "S14000074":{
             "n":"Dumfriesshire, Clydesdale and Tweeddale",
             "r":-13,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Dumfriesshire, Clydesdale and Tweeddale",
@@ -9746,7 +9746,7 @@
         "S14000100":{
             "n":"North East Fife",
             "r":-6,
-            "q":51,
+            "q":50,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"North East Fife",
@@ -9763,7 +9763,7 @@
         "S14000090":{
             "n":"Glenrothes and Mid Fife",
             "r":-6,
-            "q":52,
+            "q":51,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Glenrothes and Mid Fife",
