@@ -9780,7 +9780,7 @@
         "W07000081":{
             "n":"Aberafan Maesteg",
             "r":-36,
-            "q":46,
+            "q":45,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Aberafan Maesteg",
@@ -9796,8 +9796,8 @@
             "t_proj":0.748333},
         "W07000082":{
             "n":"Alyn and Deeside",
-            "r":-29,
-            "q":49,
+            "r":-30,
+            "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Alyn and Deeside",
@@ -9814,7 +9814,7 @@
         "W07000083":{
             "n":"Bangor Aberconwy",
             "r":-31,
-            "q":47,
+            "q":46,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Bangor Aberconwy",
@@ -9831,7 +9831,7 @@
         "W07000084":{
             "n":"Blaenau Gwent and Rhymney",
             "r":-33,
-            "q":49,
+            "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Blaenau Gwent and Rhymney",
@@ -9848,7 +9848,7 @@
         "W07000085":{
             "n":"Brecon, Radnor and Cwm Tawe",
             "r":-32,
-            "q":50,
+            "q":49,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Brecon, Radnor and Cwm Tawe",
@@ -9865,7 +9865,7 @@
         "W07000086":{
             "n":"Bridgend",
             "r":-37,
-            "q":46,
+            "q":45,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Bridgend",
@@ -9881,8 +9881,8 @@
             "t_proj":0.75055504},
         "W07000087":{
             "n":"Caerfyrddin",
-            "r":-32,
-            "q":49,
+            "r":-33,
+            "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Caerfyrddin",
@@ -9899,7 +9899,7 @@
         "W07000088":{
             "n":"Caerphilly",
             "r":-35,
-            "q":49,
+            "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Caerphilly",
@@ -9916,7 +9916,7 @@
         "W07000089":{
             "n":"Cardiff East",
             "r":-37,
-            "q":48,
+            "q":47,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Cardiff East",
@@ -9933,7 +9933,7 @@
         "W07000090":{
             "n":"Cardiff North",
             "r":-36,
-            "q":48,
+            "q":47,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Cardiff North",
@@ -9950,7 +9950,7 @@
         "W07000091":{
             "n":"Cardiff South and Penarth",
             "r":-38,
-            "q":48,
+            "q":47,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Cardiff South and Penarth",
@@ -9967,7 +9967,7 @@
         "W07000092":{
             "n":"Cardiff West",
             "r":-37,
-            "q":47,
+            "q":46,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Cardiff West",
@@ -9984,7 +9984,7 @@
         "W07000093":{
             "n":"Ceredigion Preseli",
             "r":-34,
-            "q":48,
+            "q":47,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Ceredigion Preseli",
@@ -10000,8 +10000,8 @@
             "t_proj":0.7361923},
         "W07000094":{
             "n":"Clwyd East",
-            "r":-30,
-            "q":49,
+            "r":-31,
+            "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Clwyd East",
@@ -10018,7 +10018,7 @@
         "W07000095":{
             "n":"Clwyd North",
             "r":-30,
-            "q":48,
+            "q":47,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Clwyd North",
@@ -10034,7 +10034,7 @@
             "t_proj":0.7331939},
         "W07000096":{
             "n":"Dwyfor Meirionnydd",
-            "r":-31,
+            "r":-32,
             "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
@@ -10052,7 +10052,7 @@
         "W07000097":{
             "n":"Gower",
             "r":-37,
-            "q":44,
+            "q":43,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Gower",
@@ -10069,7 +10069,7 @@
         "W07000098":{
             "n":"Llanelli",
             "r":-36,
-            "q":45,
+            "q":44,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Llanelli",
@@ -10086,7 +10086,7 @@
         "W07000099":{
             "n":"Merthyr Tydfil and Aberdare",
             "r":-34,
-            "q":49,
+            "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Merthyr Tydfil and Aberdare",
@@ -10103,7 +10103,7 @@
         "W07000100":{
             "n":"Mid and South Pembrokeshire",
             "r":-36,
-            "q":44,
+            "q":43,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Mid and South Pembrokeshire",
@@ -10120,7 +10120,7 @@
         "W07000101":{
             "n":"Monmouthshire",
             "r":-36,
-            "q":50,
+            "q":49,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Monmouthshire",
@@ -10137,7 +10137,7 @@
         "W07000102":{
             "n":"Montgomeryshire and Glynd\\u0175r",
             "r":-31,
-            "q":49,
+            "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Montgomeryshire and Glyndwr",
@@ -10154,7 +10154,7 @@
         "W07000103":{
             "n":"Neath and Swansea East",
             "r":-35,
-            "q":47,
+            "q":46,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Neath and Swansea East",
@@ -10171,7 +10171,7 @@
         "W07000104":{
             "n":"Newport East",
             "r":-37,
-            "q":49,
+            "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Newport East",
@@ -10188,7 +10188,7 @@
         "W07000105":{
             "n":"Newport West and Islwyn",
             "r":-36,
-            "q":49,
+            "q":48,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Newport West and Islwyn",
@@ -10205,7 +10205,7 @@
         "W07000106":{
             "n":"Pontypridd",
             "r":-35,
-            "q":48,
+            "q":47,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Pontypridd",
@@ -10222,7 +10222,7 @@
         "W07000107":{
             "n":"Rhondda and Ogmore",
             "r":-36,
-            "q":47,
+            "q":46,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Rhondda and Ogmore",
@@ -10239,7 +10239,7 @@
         "W07000108":{
             "n":"Swansea West",
             "r":-37,
-            "q":45,
+            "q":44,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Swansea West",
@@ -10256,7 +10256,7 @@
         "W07000109":{
             "n":"Torfaen",
             "r":-34,
-            "q":50,
+            "q":49,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Torfaen",
@@ -10273,7 +10273,7 @@
         "W07000110":{
             "n":"Vale of Glamorgan",
             "r":-38,
-            "q":47,
+            "q":46,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Vale of Glamorgan",
@@ -10290,7 +10290,7 @@
         "W07000111":{
             "n":"Wrexham",
             "r":-30,
-            "q":50,
+            "q":49,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Wrexham",
@@ -10307,7 +10307,7 @@
         "W07000112":{
             "n":"Ynys M\\u00f4n",
             "r":-29,
-            "q":46,
+            "q":45,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Ynys M\\u00f4n",
