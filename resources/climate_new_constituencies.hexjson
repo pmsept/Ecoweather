@@ -548,7 +548,7 @@
             "t_proj":0.75863934},
         "E14001138":{
             "n":"Bromsgrove",
-            "r":-33,
+            "r":-34,
             "q":52,
             "region":"E12000005",
             "colour":"#E6007C",
@@ -2640,7 +2640,7 @@
         "E14001261":{
             "n":"Halesowen",
             "r":-33,
-            "q":51,
+            "q":52,
             "region":"E12000005",
             "colour":"#E6007C",
             "name":"Halesowen",
@@ -4917,8 +4917,8 @@
             "t_proj":0.7532053},
         "E14001395":{
             "n":"North Herefordshire",
-            "r":-34,
-            "q":52,
+            "r":-33,
+            "q":50,
             "region":"E12000005",
             "colour":"#E6007C",
             "name":"North Herefordshire",
@@ -8420,7 +8420,7 @@
         "E14001601":{
             "n":"Wyre Forest",
             "r":-33,
-            "q":50,
+            "q":51,
             "region":"E12000005",
             "colour":"#E6007C",
             "name":"Wyre Forest",
