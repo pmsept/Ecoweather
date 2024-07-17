@@ -9695,7 +9695,7 @@
         "S14000086":{
             "n":"Glasgow North East",
             "r":-9,
-            "q":50,
+            "q":49,
             "region":"S92000003",
             "colour":"#2254F4",
             "name":"Glasgow North East",
@@ -10001,7 +10001,7 @@
         "W07000094":{
             "n":"Clwyd East",
             "r":-31,
-            "q":48,
+            "q":47,
             "region":"W92000004",
             "colour":"#0DBC37",
             "name":"Clwyd East",
